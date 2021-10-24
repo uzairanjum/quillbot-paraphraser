@@ -1,0 +1,5 @@
+{
+    "serverPort": 5200,
+    "debugPort": 9222,
+    "authKey": "sc@secret"
+}

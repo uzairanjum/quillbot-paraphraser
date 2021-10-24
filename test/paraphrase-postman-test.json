@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "8fc3dd0d-a607-41ca-8ba8-428354d309a9",
+		"name": "SimilarContent - QuillBot Paraphraser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "paraphrase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-key",
+						"value": "sc@secret",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"standard\",\r\n    \"text\": \"PERFORMANCE OPTIMIZATION AND DATA SECURITY: Seamless cloning and file transfers with Samsung Magician Software, the ideal SSD management solution for performance optimization and data security with automatic firmware updates\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5200/api/v1/paraphrase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"paraphrase"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
